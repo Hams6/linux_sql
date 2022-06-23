@@ -1,7 +1,4 @@
 # Introduction
-(about 150-200 words)
-Discuss the design of the project. What does this project/product do? Who are the users? What are the technologies you have used? (e.g. bash, docker, git, etc..)
-
 This project consist in collecting hardware specification and resource usage data from different Linux computers and then storing it into a psql database hosted on a single machine. The goal is to have a monitoring agent that tracks nodes in a Linux cluster in real time but since this is an MVP,
 the scope is limited to a single linux host machine. Here are the technologies used in this project:
 1. Google Cloud Platform was used to create and start a VM instance.
@@ -66,7 +63,6 @@ into the database every minute, using the `crontab` scheduler.
 Above is an infrastructure diagram of the project, which provides and overview of the technology used and its interactions.
 
 ## Scripts
-Shell script description and usage (use markdown code block for script usage)
 - <span style="color:blue">psql_docker.sh</span> is used to start|stop|create the psql container.
 - <span style="color:blue">host_info.sh</span> is used to collect and insert hardware information into the psql database.
     - `id:`Unique primary key used to identify host/node and is auto-incremented by PostgreSQL 
@@ -106,7 +102,6 @@ Describe the schema of each table using markdown table syntax (do not put any sq
 |:-------:|:-----:|:---------:|:------:|:--------:|:-----:|:------------:|
 
 # Test
-How did you test your bash scripts and SQL queries? What was the result?
 #### Bash scripts
 1. Debug the bash scripts using `bash -x` command
 2. Look at the database tables to see if the values have been inserted.
