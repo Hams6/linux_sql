@@ -57,10 +57,12 @@ Finally, we want to have the `host_usage.sh` script execute every minute in orde
 
 ## Architecture
 ![my image](./assets/Architecture.drawio.png)
+
 The 2 Bash Agent scripts which gathers server user data, and inserts it into the pql instance, are run on every node in the Linux cluster. The `host_info.sh` runs only once to collect and insert hardware information into the database while the `host_usage.sh` script collects and inserts host usage data 
 into the database every minute, using the `crontab` scheduler.
 ## Infrastructure
 ![my image](./assets/Infrastructure.drawio.png)
+
 Above is an infrastructure diagram of the project, which provides and overview of the technology used and its interactions.
 
 ## Scripts
