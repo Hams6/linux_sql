@@ -33,7 +33,7 @@ timestamp=$(TZ=UTC date +"%Y-%m-%d %H:%M:%S") #current timestamp in `2019-11-26 
 insert_stmt="INSERT INTO host_info(hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp)
              VALUES('$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$l2_cache', '$total_mem', '$timestamp')";
 
-#set up env var for pql cmd
+#set up env var for psql cmd
 export PGPASSWORD=$psql_password
 #Insert date into a database
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"

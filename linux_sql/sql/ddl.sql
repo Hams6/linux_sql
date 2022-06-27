@@ -12,12 +12,6 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_info
      "timestamp"      TIMESTAMP NOT NULL
   );
 
--- DML
--- INSERT statement
---INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, "timestamp")
---values
-
-
 -- DDL
 CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
   (
@@ -29,8 +23,3 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
      disk_io        INTEGER NOT NULL,
      disk_available INTEGER NOT NULL
   );
-
--- DML
--- INSERT statement
---INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
---values

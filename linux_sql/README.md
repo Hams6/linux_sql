@@ -10,7 +10,6 @@ the scope is limited to a single linux host machine. Here are the technologies u
 7. Crontab was used for executing the resource usage script every minute 
 
 # Quick Start
-Use markdown code block for your quick-start commands
 - Start a psql instance using psql_docker.sh
 <pre>
 <span style="color:gray"># Note that you can also stop or create the psql instance by changing the first CLI argument to either start or stop</span>
@@ -90,7 +89,6 @@ Above is an infrastructure diagram of the project, which provides and overview o
 
 
 ## Database Modeling
-Describe the schema of each table using markdown table syntax (do not put any sql code)
 - `host_info`
 
 | id  |hostname|cpu_number|cpu_architecture|cpu_model|cpu_mhz|l2_cache|total_mem|timestamp|
