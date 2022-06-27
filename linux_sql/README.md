@@ -1,5 +1,5 @@
 # Introduction
-This project consist in collecting hardware specification and resource usage data from different Linux computers and then storing it into a psql database hosted on a single machine. The goal is to have a monitoring agent that tracks nodes in a Linux cluster in real time but since this is an MVP,
+This project consist in collecting hardware specification and resource usage data from different Linux computers and then storing them into a psql database hosted on a single machine. The goal is to have a monitoring agent that tracks nodes in a Linux cluster in real time but since this is an MVP,
 the scope is limited to a single linux host machine. Here are the technologies used in this project:
 1. Google Cloud Platform was used to create and start a VM instance.
 2. GitHub was used to for creating a repository to host the code using GitFlow branching model to structure feature releases.
