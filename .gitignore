@@ -1,1 +1,4 @@
 .idea
+/core_java/grep/data/
+/core_java/grep/log/
+/core_java/grep/target/
