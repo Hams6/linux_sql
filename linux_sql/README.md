@@ -2,7 +2,7 @@
 This project consist in collecting hardware specification and resource usage data from different Linux computers and then storing them into a psql database hosted on a single machine. The goal is to have a monitoring agent that tracks nodes in a Linux cluster in real time but since this is an MVP,
 the scope is limited to a single linux host machine. Here are the technologies used in this project:
 1. Google Cloud Platform was used to create and start a VM instance.
-2. GitHub was used to for creating a repository to host the code using GitFlow branching model to structure feature releases.
+2. GitHub was used for creating a repository to host the code using GitFlow branching model to structure feature releases.
 3. Docker was used to pull a psql image from Docker Hub and creating the container which ran the psql instance.
 4. PSQL CLI tool was used to connect to a psql instance and execute sql files.
 5. Bash scripts were used to implement start|stop|create functionality for the psql container, collecting hardware specification and resource usage data that would then be inserted into the psql database.
